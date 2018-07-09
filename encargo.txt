@@ -1,0 +1,9 @@
+encargo.txt
+
+Almacén de archivos tipo Dropbox(2)
+
+Realizar un sistema de administración de archivos que permita: 
+	Registrar usuarios con el correo
+	Subir al menos txt, pdf y mp3.
+	Compartir ficheros con otros usuarios
+	Crear carpetas y guardar archivos en ellas.

@@ -13,8 +13,8 @@
 <body>
 <?php
   $mensaje = '';
-  if(!empty($_PORT["mensaje"])){
-    $mensaje = $_POST["mensaje"];
+  if(!empty($_GET["mensaje"])){
+    $mensaje = $_GET["mensaje"];
     }
 ?>
   
@@ -46,9 +46,11 @@
     <div class="session on-left padding-left">
        <h5><a href="compartido_con.php" class="button error">Compartido conmigo<a></h5>
     </div>
-
+    <div class="session on-right padding-right">
+      <a href="logout.php">Cerrar Sesión</a>
+    </div>
     <div  class="session on-right padding-right">
-      <h5><a href="logout.php"><?php echo $nick; ?></h5>
+      <h5><?php echo $nick; ?></h5>
     </div>
     
     <div class="clear"></div>

@@ -13,8 +13,8 @@
 <body>
 <?php
   $mensaje = '';
-  if(!empty($_PORT["mensaje"])){
-    $mensaje = $_POST["mensaje"];
+  if(!empty($_GET["mensaje"])){
+    $mensaje = $_GET["mensaje"];
     }
 ?>
   
@@ -24,6 +24,7 @@
     //print_r($_SESSION);
     if(!empty($_SESSION['usuario_id'])){
       $id = $_SESSION['usuario_id'];
+      //usuario
       $query = "SELECT * FROM usuarios WHERE id='$id'";
       $respuesta = @mysqli_query($laDB, $query);
       $usuario = mysqli_fetch_assoc($respuesta);
@@ -32,12 +33,14 @@
       $clave = $usuario['clave'];
       $correo = $usuario['mail'];
       $nombre = $usuario['nombre'];
- 	    $carpeta_id = $_GET['carpeta_id'];
+      //archivos
+      $query = "SELECT archivos.id, archivos.nombre, archivos.tipo
+				FROM archivos INNER JOIN compartidos
+				ON archivos.id = compartidos.archivo_id
+				WHERE compartidos.destinatario_id ='$id'";
+      $archivos = @mysqli_query($laDB, $query);
       
-    	 //Cerrar conexión
-    	//mysqli_close($laDB);
-   	}
-    ?>
+  ?>
   <!-- Banner de arriba -->
   <header class="bck dark">
     <div class="session on-left inline padding-right">
@@ -50,20 +53,22 @@
        <h5><a href="compartido_con.php" class="button error">Compartido conmigo<a></h5>
    <!-- <h4><a href="mi_j.php" class="button error">Compartido conmigo<a></h4> -->
     </div>
+
     <div class="session on-right padding-right">
       <a href="logout.php">Cerrar Sesión</a>
     </div>
+
     <div  class="session on-right padding-right">
       <h5 ><?php echo $nick; ?></h5>
     </div>
-    
     <div class="clear"></div>
   </header>
   <!-- Fin Banner de arriba -->
-  
+  <?php }
+  ?>
  
 
-
+  <!-- carpetas -->
   <div class="row ">
       <div class="column_12">
         <p class="inline on-left"><?php echo $mensaje; ?></p>
@@ -72,24 +77,41 @@
   
   <div class="row">
         <div class="column_12 padding bck light form">
-        	<form action=
-          <?php if(empty($_GET['carpeta_id'])){
-            echo 'archivoSubir.php ';
-          } else {
-            echo 'archivoSubir.php?carpeta_id=' . $carpeta_id .' ';
-          } ?>
-          method="post" enctype="multipart/form-data">
-        		<input type="file" name="archivo"/>
-        		<button type="submit" name="subir">Subir</button>
-        	</form>
+            <table id="table" class="table align center">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                   </tr>
+                </thead>
+                <tbody>
+                  <?php 
+                  foreach($archivos as $archivo) { ?>
+                    <tr>
+                     <td><?php echo $archivo['id'] ?></td>
+                     <td><a href="archivoVer.php?id=<?php echo $archivo['id']?>"><?php echo $archivo['nombre'] ?></td>
+                     <td><?php echo $archivo['tipo'] ?></td>
+                     <td><a href="descargarArchivo.php?id=<?php echo $archivo['id']?>" class="button error">Descargar</a></td>
+                     
+                    </tr>
+                    <?php
+                   }
+                    
+                  ?>
+                </tbody>
+            </table>
         </div>
     </div>
 
-  <!-- asd -->
-  <!-- <nav data-tuktuk="buttons" class="padding align inline ">
-    <a href="" class="button error"><i class="fa fa-arrow-left"></i> Subir Archivo</a>
-  </nav> -->
 
+
+
+  </nav>
+<?php 
+mysqli_close($laDB);
+?>
 
 </body>
 </html>

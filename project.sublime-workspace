@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"ca",
+				"carpeta_id"
+			],
+			[
+				"usu",
+				"usuario_id"
+			],
+			[
 				"in",
 				"input\tTag"
 			],
@@ -59,48 +67,28 @@
 			"file": "principal.php",
 			"settings":
 			{
-				"buffer_size": 2445,
+				"buffer_size": 2474,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "mi_j.php",
+			"file": "logout.php",
 			"settings":
 			{
-				"buffer_size": 3156,
+				"buffer_size": 267,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
-				"name": "mi_j.php"
+				"name": "logout.php"
 			}
 		},
 		{
-			"file": "subir_archivo.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 2317,
+				"buffer_size": 1853,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "archivoSubir.php",
-			"settings":
-			{
-				"buffer_size": 675,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "archivo_sube.php"
-			}
-		},
-		{
-			"file": "archivoVer.php",
-			"settings":
-			{
-				"buffer_size": 366,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "archivoVer.php"
 			}
 		},
 		{
@@ -114,22 +102,72 @@
 			}
 		},
 		{
-			"file": "registro_completado.html",
+			"file": "mi_j.php",
 			"settings":
 			{
-				"buffer_size": 867,
+				"buffer_size": 3473,
 				"encoding": "UTF-8",
 				"line_ending": "Windows",
-				"name": "registro_completado.html"
+				"name": "mi_j.php"
 			}
 		},
 		{
-			"file": "index.php",
+			"file": "crear_carpeta.php",
 			"settings":
 			{
-				"buffer_size": 1622,
+				"buffer_size": 2286,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "crear_carpeta.php"
+			}
+		},
+		{
+			"file": "carpetaCrear.php",
+			"settings":
+			{
+				"buffer_size": 536,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "carpetaCrear.php"
+			}
+		},
+		{
+			"file": "ver_carpeta.php",
+			"settings":
+			{
+				"buffer_size": 3376,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "ver_carpeta.php"
+			}
+		},
+		{
+			"file": "subir_archivo.php",
+			"settings":
+			{
+				"buffer_size": 2534,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "archivoSubir.php",
+			"settings":
+			{
+				"buffer_size": 986,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "archivo_sube.php"
+			}
+		},
+		{
+			"file": "archivoVer.php",
+			"settings":
+			{
+				"buffer_size": 366,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "archivoVer.php"
 			}
 		},
 		{
@@ -154,7 +192,7 @@
 			"file": "querys.sql",
 			"settings":
 			{
-				"buffer_size": 543,
+				"buffer_size": 1047,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -164,6 +202,24 @@
 			"settings":
 			{
 				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "registro \nlogin \ndos consultas\nreserva",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Windows",
+				"name": "registro"
+			}
+		},
+		{
+			"file": "usuario_registra.php",
+			"settings":
+			{
+				"buffer_size": 1434,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -208,6 +264,7 @@
 	],
 	"file_history":
 	[
+		"/C/wamp/www/dropdaj/registro_completado.html",
 		"/C/wamp/www/dropdaj/static/subir_archivo.php",
 		"/C/wamp/www/dropdaj/usuario_registra.php",
 		"/C/wamp/www/dropdaj/principal.html",
@@ -296,7 +353,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 19,
 			"sheets":
 			[
 				{
@@ -324,7 +381,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -352,7 +409,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -368,24 +425,21 @@
 						"selection":
 						[
 							[
-								17,
-								6
-							],
-							[
-								1411,
-								1296
+								458,
+								362
 							]
 						],
 						"settings":
 						{
 							"auto_name": "registra.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 126.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -394,15 +448,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2445,
+						"buffer_size": 2474,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								742,
-								672
+								436,
+								457
 							]
 						],
 						"settings":
@@ -412,27 +466,118 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "mi_j.php",
+					"file": "logout.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3156,
+						"buffer_size": 267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2847,
-								2847
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"auto_name": "logout.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"auto_name": "login.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 36.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "mi_j.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2840,
+								2840
 							]
 						],
 						"settings":
@@ -443,32 +588,96 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1134.0,
+						"translation.y": 2714.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "subir_archivo.php",
+					"buffer": 8,
+					"file": "crear_carpeta.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2317,
+						"buffer_size": 2286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								568,
-								538
+								2028,
+								2028
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"auto_name": "crear_carpeta.php",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "carpetaCrear.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"auto_name": "carpetaCrear.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "ver_carpeta.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3135,
+								3096
+							]
+						],
+						"settings":
+						{
+							"auto_name": "ver_carpeta.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -478,36 +687,67 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "archivoSubir.php",
+					"buffer": 11,
+					"file": "subir_archivo.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 675,
+						"buffer_size": 2534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								675
+								2095,
+								2095
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 972.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "archivoSubir.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
 							]
 						],
 						"settings":
 						{
 							"auto_name": "archivo_sube.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 13,
 					"file": "archivoVer.php",
 					"semi_transient": false,
 					"settings":
@@ -532,103 +772,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "login.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1426,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1299,
-								1299
-							]
-						],
-						"settings":
-						{
-							"auto_name": "login.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "registro_completado.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 867,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								613,
-								613
-							]
-						],
-						"settings":
-						{
-							"auto_name": "registro_completado.html",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1622,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1113,
-								1104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "usuario_ver.php",
 					"semi_transient": false,
 					"settings":
@@ -640,8 +788,8 @@
 						"selection":
 						[
 							[
-								80,
-								49
+								337,
+								0
 							]
 						],
 						"settings":
@@ -652,11 +800,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 15,
 					"file": "querys/usuarioLogin.sql",
 					"semi_transient": false,
 					"settings":
@@ -681,39 +829,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "querys.sql",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 543,
+						"buffer_size": 1047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								542,
-								204
+								639,
+								639
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SQL/SQL.sublime-syntax"
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 17,
 					"file": "listarUsuarios.php",
 					"semi_transient": false,
 					"settings":
@@ -737,7 +887,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"auto_name": "registro",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "usuario_registra.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1408,
+								840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

@@ -13,8 +13,8 @@
 <body>
 <?php
   $mensaje = '';
-  if(!empty($_PORT["mensaje"])){
-    $mensaje = $_POST["mensaje"];
+  if(!empty($_GET["mensaje"])){
+    $mensaje = $_GET["mensaje"];
     }
 ?>
   
@@ -32,7 +32,7 @@
       $clave = $usuario['clave'];
       $correo = $usuario['mail'];
       $nombre = $usuario['nombre'];
- 	    $carpeta_id = $_GET['carpeta_id'];
+ 	  $archivo_id = $_GET['id'];
       
     	 //Cerrar conexión
     	//mysqli_close($laDB);
@@ -72,24 +72,14 @@
   
   <div class="row">
         <div class="column_12 padding bck light form">
-        	<form action=
-          <?php if(empty($_GET['carpeta_id'])){
-            echo 'archivoSubir.php ';
-          } else {
-            echo 'archivoSubir.php?carpeta_id=' . $carpeta_id .' ';
-          } ?>
-          method="post" enctype="multipart/form-data">
-        		<input type="file" name="archivo"/>
-        		<button type="submit" name="subir">Subir</button>
+        	<p>Escribe el ID del usuario con el que quieres compartir el archivo</p>
+        	<form action="archivoCompartir.php?archivo_id=<?php echo $_GET['id'] ?>" method="post">
+        		
+        		<input type="text" name="usuario_id" value="ej. juancho_nieve"/>
+        		<button type="submit" name="crear">Compartir</button>
         	</form>
         </div>
     </div>
-
-  <!-- asd -->
-  <!-- <nav data-tuktuk="buttons" class="padding align inline ">
-    <a href="" class="button error"><i class="fa fa-arrow-left"></i> Subir Archivo</a>
-  </nav> -->
-
-
+  
 </body>
 </html>

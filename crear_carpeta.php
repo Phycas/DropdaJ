@@ -50,7 +50,9 @@
        <h5><a href="compartido_con.php" class="button error">Compartido conmigo<a></h5>
    <!-- <h4><a href="mi_j.php" class="button error">Compartido conmigo<a></h4> -->
     </div>
-
+    <div class="session on-right padding-right">
+      <a href="logout.php">Cerrar Sesión</a>
+    </div>
     <div  class="session on-right padding-right">
       <h5 ><?php echo $nick; ?></h5>
     </div>
